@@ -1,0 +1,36 @@
+<HTML>
+
+<HEAD>
+
+  <SCRIPT>
+    var ex1 = '11111'; //плеер №1
+    var ex2 = '22222'; //плеер №2
+    window.onLoad = '00000' ();
+  </SCRIPT>
+
+  <SCRIPT>
+    window.onload = (function() {
+      document.getElementById('player').innerHTML = ex1;
+    });
+  </SCRIPT>
+
+  <SCRIPT>
+    function player1() {
+      document.getElementById('player').innerHTML = ex1;
+    }
+
+    function player2() {
+      document.getElementById('player').innerHTML = ex2;
+    }
+  </SCRIPT>
+</HEAD>
+
+<BODY>
+  <DIV ID="player"></DIV>
+  <FORM>
+    <INPUT TYPE="BUTTON" ONCLICK="player1()" VALUE="Плеер №1">
+    <INPUT TYPE="BUTTON" ONCLICK="player2()" VALUE="Плеер №2">
+  </FORM>
+</BODY>
+
+</HTML>

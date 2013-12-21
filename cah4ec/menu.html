@@ -1,0 +1,102 @@
+<html>
+
+	<head>
+		<meta charset='utf-8' />
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<meta name="description" content="CAH4EC-Live" />
+		<title>CAH4EC-Live</title>
+		<style>
+   h1 {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 7pt;
+	color: #848484;
+	margin: 0;
+   } 
+   p {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 11pt;
+	color: #FFFFFF;
+	margin: 0;
+   }
+   p2 {
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 11pt;
+	color: #848484;
+	margin: 0;
+   }
+  </style>
+  <style type="text/css">
+#btn3 {
+width: 114px;
+height: 24px;
+padding:0px;
+font-family:sans-serif;
+font-weight:bolt;
+font-size:15;
+color:#ffffff;
+cursor:pointer;
+background-color:#018634;
+border:1px solid #000000;
+outline: none;
+}
+#btn5 {
+width: 114px;
+height: 24px;
+padding:0px;
+font-family:sans-serif;
+font-weight:bolt;
+font-size:15;
+color:#ffffff;
+cursor:pointer;
+background-color:#481568;
+border:1px solid #000000;
+outline: none;
+}
+a img {
+border: none; /* Убираем рамку */
+}
+a {
+outline: none; /* Убираем границу вокруг ссылок  */
+}
+</style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+ set_chat_height();
+});
+$(window).resize(function() {
+ set_chat_height();
+});
+function set_chat_height() {
+ $('#chat').attr('src','http://chat.sc2tv.ru/index.htm?channelId=108779&stop=&width=230&height='+$('#chat').height());
+}
+</script>
+	</head>
+
+<body text="#AE0000" style="margin: 0px; padding:0px; height: 100%; width: 100%; overflow:hidden;" bgcolor="#000000">
+<div style=" height: 100%">
+    <table style="width: 100%; height: 100%" cellspacing="0"  cellpadding="0">
+        <tr>
+			<td width="230">
+				<center>
+                  <p><a href="http://sc2tv.ru/content/онлайн-кинозал-cah4ec-только-качественные-фильмы"
+                       target="_blank"><img src="img/logo-sc2tv.jpg" alt="" height="92" width="230"></a></p>
+				<p><INPUT width="115px" id="btn3" TYPE="button" Value="Cybergame" onClick="parent.CONTENT.location='content.html';"><INPUT id="btn5" TYPE="button" Value="Twitch" onClick="parent.CONTENT.location='content-second.html';"></p>
+				
+				 
+				</center>
+			</td>
+		</tr>
+		<tr>
+            <td background="img/nochat-sc2tv.jpg" align="center" style="vertical-align:top;" height="100%" width="230">
+				<iframe id="chat" style="overflow:hidden;height:100%;width:100%;margin:0px;padding:0px;" 
+                        width="100%" height="100%" frameborder="0" scrolling="no" align="bottom"
+                        src="http://chat.sc2tv.ru/index.htm?channelId=108779&stop=&height=500&width=230"></iframe>
+            </td>
+		</tr>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
